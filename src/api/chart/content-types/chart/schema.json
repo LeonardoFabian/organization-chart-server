@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "charts",
+  "info": {
+    "singularName": "chart",
+    "pluralName": "charts",
+    "displayName": "Chart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "primary_node": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::node.node"
+    }
+  }
+}
